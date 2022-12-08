@@ -101,17 +101,24 @@ input,  input:hover, input:focus {
 .title {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     line-height: 23px;
 
     color: var(--color-black);
 }
 
+@media (min-width: 800px) {
+    .title {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: normal;
+    }
+}
+
 @media (min-width: 1100px) {
     .title {
         font-size: 24px;
-        line-height: normal;
     }
 }
 
@@ -136,10 +143,16 @@ input,  input:hover, input:focus {
 }
 
 
+@media (min-width: 800px) {
+    .text {
+        font-size: 14px;
+        line-height: normal;
+    }
+}
+
 @media (min-width: 1100px) {
     .text {
         font-size: 16px;
-        line-height: normal;
     }
 }
 
@@ -167,11 +180,20 @@ input,  input:hover, input:focus {
     font-family: 'SFProText';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 2.592px;
-    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 2.12677px;
     color: var(--color-opacity-black)
+}
+
+
+
+@media (min-width: 800px) {
+    .more-link-text {
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 2.592px;
+    }
 }
 
 .settings-link-text {
